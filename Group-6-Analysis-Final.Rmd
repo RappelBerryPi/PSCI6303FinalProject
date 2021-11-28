@@ -1,0 +1,147 @@
+---
+title: 'Final Project: Group 6. Effect of Russian Trolls on the 2016 U.S. Presidential election.'
+author:
+  - Ryan Appel
+  - Angel Arribas
+  - Drew Breyer
+  - Humza Kahn
+  - Devanshi Patel
+  - Hanna Shin
+  - Poonam Siyag
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+# Introduction
+## Getting started
+
+Loading packages is boring and time-consuming. First, you need to install packages. Second, you need to run them in R's environment.
+```{r, include=FALSE}
+if (!require("pacman")) install.packages("pacman")
+p_load(data.table, dplyr) # two modern packages to modify data objects in R
+p_load(stargazer) # a package to summaries regression results 
+p_load(ggplot2, ggpubr) # two packages to visualize data
+`%+%` <- function(x,y){paste0(x, y)} # collapse two strings into one
+theme_set(theme_pubr(border = TRUE)) # make figures beautiful and ascetic by default
+```
+
+## Custom Functions
+
+```{r}
+# The below function provides a percentage after being passed a part and whole data.table
+percentage <- function(part, whole, rounding.digits = 3) {
+    part.count <- nrow(part)
+    whole.count <- nrow(whole)
+    percentage <- part.count / whole.count
+    percentage <- percentage * 100
+    percentage <- round(percentage, rounding.digits)
+    return (percentage)
+}
+
+print.percentage <- function(part, whole, rounding.digits = 3) {
+    p <- percentage(part, whole, rounding.digits)
+    print( p %+% "%")
+}
+```
+
+## Loading data
+Load dataset `d` and inspect its structure.
+```{r}
+path <- 'https://raw.githubusercontent.com/RappelBerryPi/PSCI6303FinalProject/main/0-data/data.csv'
+d <- fread(path)
+```
+
+## Summarize the data
+```{r}
+names(d)
+glimpse(d)
+head(d)
+tail(d)
+str(d)
+```
+
+
+## Simple analysis
+
+For the first part let's see percentages. Let's look at those who voted the same as before
+
+```{r}
+part <- d[vote2012 == vote2016]
+print.percentage(part, d)
+```
+
+
+Now let's aggregate the data. Let's go ahead and combine the tweets in the following manner.
+Let's take the Anti-Democratic and Pro-Republican tweets and combine the two.
+Let's do the same for the Anti-Republican / Pro-Democratic.
+And then let's take a total of the tweets that were seen
+```{r}
+d.aggregate <- d
+d.aggregate <- d.aggregate[,troll_tweets_for_republican := troll_tweets_pro_republican + troll_tweets_anti_democratic]
+d.aggregate <- d.aggregate[,troll_tweets_for_democratic := troll_tweets_pro_democratic + troll_tweets_anti_republican]
+d.aggregate <- d.aggregate[,troll_tweets_total := troll_tweets_pro_democratic + troll_tweets_anti_republican +
+                            troll_tweets_pro_republican + troll_tweets_anti_democratic]
+# d.did <- d.did [,time := as.numeric(as.character(time))]
+```
+
+let's also take a look and create a new column as to whether or not someone voted the same as before or not.
+```{r}
+d.aggregate <- d.aggregate[, voted_same := vote2012 == vote2016]
+```
+
+now let's run some plots
+```{r}
+ggplot(data = d.aggregate, aes(x = troll_tweets_total)) +
+    geom_histogram(position = 'identity', alpha = 0.3, binwidth = 1)
+ggplot(data = d.aggregate, aes(x = troll_tweets_for_democratic)) +
+    geom_histogram(position = 'identity', alpha = 0.3, binwidth = 1)
+ggplot(data = d.aggregate, aes(x = troll_tweets_for_republican)) +
+    geom_histogram(position = 'identity', alpha = 0.3, binwidth = 1)
+```
+```{r}
+ggplot(data = d.aggregate, aes(x = troll_tweets_total, fill = voted_same)) +
+    geom_histogram(position = 'identity', alpha = 0.3, binwidth = 1)
+ggplot(data = d.aggregate, aes(x = troll_tweets_for_republican, fill = voted_same)) +
+    geom_histogram(position = 'identity', alpha = 0.3, binwidth = 1)
+ggplot(data = d.aggregate, aes(x = troll_tweets_for_democratic, fill = voted_same)) +
+    geom_histogram(position = 'identity', alpha = 0.3, binwidth = 1)
+```
+
+Alright, so these graphs look nearly identical for those who voted the same and those who voted difference meaning that there's not really a difference between those who voted the same and those who voted different. Let's add in another column that drops everyone below the mean of the troll tweets seen as not being effected by twitter. let's keep these split
+into the same three categories of `for_republican` `for_democratic` and `total`.
+```{r}
+mean.total.troll.tweets <- mean(d.aggregate$troll_tweets_total)
+mean.for_republican.troll.tweets <- mean(d.aggregate$troll_tweets_for_republican)
+mean.for_democratic.troll.tweets <- mean(d.aggregate$troll_tweets_for_democratic)
+d.affected.total <- d.aggregate[, affected := troll_tweets_total >= mean.total.troll.tweets]
+d.affected.republican <- d.aggregate[, affected := troll_tweets_pro_democratic >= mean.for_republican.troll.tweets]
+d.affected.democratic <- d.aggregate[, affected := troll_tweets_pro_democratic >= mean.for_democratic.troll.tweets]
+```
+
+now that we have three datasets split to where we now have a control and a treatment group, let's see if there's
+a difference between the two groups.
+```{r}
+ggplot(data = d.affected.total, aes(x = troll_tweets_total, fill = affected)) +
+    geom_histogram(position = 'identity', alpha = 0.3, binwidth = 1)
+```
+
+let's also add in to the democratic and republican datasets if the person changed their vote to be that party or not.
+```{r}
+d.affected.republican[, change_to_republican := vote2016 == "R" & voted_same == FALSE]
+d.affected.democratic[, change_to_democratic := vote2016 == "D" & voted_same == FALSE]
+```
+
+now let's take a look at these
+```{r}
+ggplot(data = d.affected.republican, aes(x = troll_tweets_total, fill = change_to_republican)) +
+    geom_histogram(position = 'identity', alpha = 0.3, binwidth = 1)
+ggplot(data = d.affected.democratic, aes(x = troll_tweets_total, fill = change_to_democratic)) +
+    geom_histogram(position = 'identity', alpha = 0.3, binwidth = 1)
+```
+
+
+Let's analyze this total data one more way. let's see if the medium at which the users get their
+information affects the way they let twitter affect them.
+```{r}
+```
