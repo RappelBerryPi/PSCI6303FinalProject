@@ -1,0 +1,1001 @@
+voting_preference,troll_tweets_pro_democratic,troll_tweets_anti_democratic,troll_tweets_pro_republican,troll_tweets_anti_republican,vote2012,vote2016,main_information_sorce
+R,14,64,85,18,R,O,Online
+R,21,72,90,23,R,R,Online
+R,25,62,89,22,R,R,Social Media
+R,8,73,96,29,R,R,Television
+R,22,74,82,28,R,D,Online
+R,23,60,85,18,R,R,Social Media
+R,17,75,81,14,R,R,Social Media
+R,17,69,93,22,R,R,Social Media
+R,17,67,88,13,R,R,Social Media
+R,16,72,81,23,R,R,Print
+R,18,76,86,18,R,R,Online
+R,15,78,85,26,R,D,Social Media
+R,16,64,91,25,O,R,Print
+R,20,68,93,28,R,R,Online
+R,25,71,84,17,R,R,None
+R,19,70,95,30,R,R,Online
+R,17,68,92,16,R,R,Social Media
+R,15,58,91,14,R,R,Social Media
+R,16,69,91,21,D,R,Social Media
+R,32,64,92,22,D,R,None
+R,21,70,95,26,D,R,Print
+R,18,66,87,23,R,D,Social Media
+R,18,69,90,16,R,R,Online
+R,22,66,104,25,R,D,Print
+R,17,68,85,16,R,R,Online
+R,13,68,91,26,R,R,Social Media
+R,23,77,83,22,R,O,Social Media
+R,15,74,91,22,D,R,Social Media
+R,20,69,95,16,R,R,Online
+R,15,64,78,17,R,O,Online
+R,26,75,87,25,O,R,Social Media
+R,18,63,101,22,R,R,None
+R,16,64,86,17,R,R,Social Media
+R,17,66,83,21,R,R,Online
+R,12,65,92,27,R,O,Print
+R,14,65,86,18,O,R,Online
+R,9,76,97,11,R,R,Online
+R,13,69,95,23,R,R,None
+R,19,66,94,20,R,R,Online
+R,18,73,83,16,R,O,Online
+R,27,71,92,17,R,O,Print
+R,15,64,92,21,R,R,Social Media
+R,16,67,80,20,R,R,Social Media
+R,19,73,93,20,R,R,Television
+R,15,80,92,19,R,R,Social Media
+R,15,78,85,23,R,O,None
+R,14,74,89,15,R,R,Television
+R,14,70,100,16,R,O,Social Media
+R,17,61,94,29,R,R,Social Media
+R,18,66,84,25,R,R,Social Media
+R,11,69,90,18,R,R,Social Media
+R,17,72,99,14,R,R,Social Media
+R,14,70,90,6,D,R,Social Media
+R,15,70,87,25,R,R,Social Media
+R,19,79,96,21,R,R,Social Media
+R,23,72,88,22,R,R,Online
+R,28,69,89,21,R,O,Online
+R,16,68,94,20,O,O,Online
+R,28,70,99,25,R,R,Online
+R,14,66,86,22,D,R,Social Media
+R,23,77,89,24,R,R,Social Media
+R,33,69,90,20,R,O,Print
+R,20,67,94,24,R,R,Social Media
+R,17,66,98,22,O,R,Online
+R,20,75,98,21,O,O,Social Media
+R,29,64,89,22,O,O,Online
+R,14,68,95,24,R,R,Social Media
+R,27,72,86,14,R,R,Online
+R,27,69,87,10,O,R,Online
+R,22,71,84,23,R,R,Social Media
+R,20,63,84,18,R,R,None
+R,18,68,93,11,R,R,Online
+R,18,61,94,23,D,R,None
+R,23,66,91,17,D,R,None
+R,30,76,86,24,R,R,Social Media
+R,19,71,91,22,R,R,Social Media
+R,13,70,84,24,D,R,Online
+R,16,65,81,11,R,R,Online
+R,21,67,87,14,R,R,Print
+R,18,65,88,25,R,R,None
+R,19,70,85,19,R,R,Social Media
+R,19,74,80,30,R,R,Print
+R,13,71,88,19,R,R,Online
+R,19,67,93,10,R,R,None
+R,24,73,94,24,R,R,None
+R,23,72,98,16,R,R,None
+R,23,74,90,29,R,R,Social Media
+R,18,68,101,29,R,R,Social Media
+R,19,64,92,27,R,O,Print
+R,14,70,89,21,R,R,Social Media
+R,20,72,80,17,O,R,Social Media
+R,21,78,102,20,R,D,None
+R,29,70,97,17,O,R,Social Media
+R,25,72,93,16,R,R,Social Media
+R,18,70,96,13,R,R,Social Media
+R,22,81,95,21,R,R,Online
+R,14,77,94,25,R,R,Social Media
+R,24,69,95,21,R,O,Social Media
+R,25,69,95,17,R,D,Social Media
+R,31,70,87,22,R,R,None
+R,22,71,89,24,R,R,None
+R,18,67,91,21,R,R,Social Media
+R,20,70,86,24,R,R,Social Media
+R,17,67,101,12,R,D,Print
+R,16,65,83,20,R,R,Online
+R,21,74,91,17,D,R,Social Media
+R,16,73,86,23,R,R,Online
+R,21,67,90,27,D,D,Television
+R,22,76,91,23,O,R,Television
+R,20,69,90,23,R,R,Social Media
+R,19,69,75,17,R,R,Television
+R,17,65,78,24,R,R,None
+R,14,70,94,19,R,R,Social Media
+R,24,69,86,17,D,R,None
+R,20,70,90,20,R,R,Print
+R,24,72,94,18,R,R,Online
+R,14,75,89,31,R,O,Social Media
+R,21,72,86,22,R,R,Social Media
+R,23,75,89,16,R,O,Social Media
+R,20,75,98,18,R,R,None
+R,19,55,98,27,R,R,Social Media
+R,16,68,100,15,R,R,Social Media
+R,30,73,98,14,R,O,Social Media
+R,24,64,82,22,R,R,Online
+R,29,65,81,25,R,R,Print
+R,20,71,90,10,R,R,Social Media
+R,17,68,89,21,R,R,Social Media
+R,12,61,83,31,R,R,Online
+R,17,75,80,22,R,R,Online
+R,21,66,96,24,R,R,None
+R,25,72,98,20,R,R,None
+R,21,72,91,17,R,D,Print
+R,14,78,91,14,R,R,Social Media
+R,23,71,89,17,R,R,Print
+R,12,73,88,13,R,O,None
+R,18,76,83,20,R,R,Online
+R,18,68,89,15,R,R,Online
+R,10,62,85,22,R,R,None
+R,25,71,91,17,R,R,Online
+R,17,77,94,17,R,R,Social Media
+R,18,63,89,24,R,R,None
+R,27,75,97,23,R,R,Online
+R,23,70,98,31,D,D,Social Media
+R,19,70,96,20,R,R,Social Media
+R,23,68,83,11,R,R,Online
+R,22,75,82,15,R,R,Online
+R,28,77,90,23,R,R,Online
+R,21,78,91,19,R,O,Social Media
+R,23,65,93,25,R,R,Online
+R,22,74,83,25,R,R,None
+R,18,68,89,31,R,R,Online
+R,20,65,92,21,R,R,Online
+R,28,72,82,20,R,O,Social Media
+R,16,70,91,17,R,R,None
+R,21,74,100,21,R,R,Online
+R,27,79,82,22,D,R,Social Media
+R,19,75,97,28,R,R,Social Media
+R,15,67,95,23,R,R,Social Media
+R,16,71,95,13,R,R,Print
+R,18,77,97,14,R,R,Online
+R,16,76,90,12,O,R,None
+R,19,62,91,25,R,R,Online
+R,18,75,85,13,D,R,Online
+R,19,68,93,17,R,R,Television
+R,22,67,96,14,R,R,Social Media
+R,23,64,91,26,R,R,Social Media
+R,28,68,96,28,R,R,Television
+R,20,73,96,24,D,R,Online
+R,18,77,84,15,O,R,Online
+R,27,71,92,19,O,D,Online
+R,29,70,88,21,D,D,Online
+R,20,69,89,21,D,R,Online
+R,18,75,89,14,R,R,None
+R,11,65,84,19,R,R,Social Media
+R,27,71,95,26,R,R,Social Media
+R,16,75,85,15,D,R,Online
+R,14,75,92,24,R,D,Social Media
+R,35,72,81,18,R,R,Social Media
+R,21,64,88,21,R,R,Online
+R,20,66,89,23,R,D,Print
+R,6,66,87,21,R,R,Online
+R,20,63,89,28,R,R,Television
+R,25,70,95,13,R,D,Online
+R,22,76,93,21,R,R,None
+R,25,58,86,24,R,R,Social Media
+R,30,74,89,20,R,R,Print
+R,26,69,90,17,R,R,Social Media
+R,17,66,88,30,R,R,Print
+R,24,74,89,25,R,R,None
+R,19,73,89,25,R,R,Social Media
+R,17,70,101,14,R,O,Online
+R,6,65,91,18,R,O,Social Media
+R,16,66,93,10,O,D,Television
+R,22,62,87,22,R,R,Online
+R,31,79,91,11,R,R,Television
+R,23,69,91,10,D,R,Social Media
+R,23,66,92,23,R,R,Social Media
+R,15,59,91,12,R,O,Social Media
+R,21,68,100,18,O,R,None
+R,10,67,80,22,R,R,None
+R,22,63,93,20,R,R,Online
+R,23,82,93,24,D,R,None
+R,21,74,86,16,R,R,Online
+R,24,62,90,18,R,R,None
+R,22,76,85,13,R,R,Social Media
+R,24,75,86,13,R,O,Social Media
+R,29,73,79,20,R,R,None
+R,26,72,96,18,R,R,Social Media
+R,20,71,87,23,R,O,Television
+R,14,73,93,15,R,R,Social Media
+R,22,65,89,17,R,R,None
+R,18,67,100,31,R,R,Online
+R,27,65,91,22,R,D,Online
+R,12,69,101,22,R,R,None
+R,18,71,91,15,R,O,Print
+R,22,73,97,30,O,R,Social Media
+R,19,73,91,25,D,R,Online
+R,17,77,92,27,R,D,None
+R,18,73,89,24,R,R,None
+R,23,76,91,19,R,O,Online
+R,24,75,94,17,R,O,Television
+R,23,67,92,16,R,R,Social Media
+R,31,74,82,22,R,O,Print
+R,26,72,96,17,R,R,Social Media
+R,21,71,86,21,R,R,None
+R,17,65,95,21,R,R,None
+R,35,73,89,22,O,D,Social Media
+R,23,70,90,19,R,R,Social Media
+R,17,68,93,21,D,R,Online
+R,21,75,86,16,O,O,None
+R,18,75,90,15,D,D,Online
+R,19,74,87,18,D,R,Social Media
+R,15,57,93,15,R,R,Social Media
+R,21,66,92,21,R,R,Social Media
+R,22,75,83,28,R,R,Social Media
+R,15,66,88,19,R,R,Social Media
+R,4,72,87,22,R,R,None
+R,19,71,87,16,R,R,Online
+R,20,76,90,24,O,R,None
+R,23,66,81,20,R,D,Television
+R,20,70,100,8,R,R,Social Media
+R,22,72,92,22,D,R,Online
+R,15,76,80,23,R,R,Television
+R,24,69,85,22,R,R,Online
+R,24,71,92,20,O,R,Social Media
+R,21,63,79,23,R,R,Social Media
+R,27,73,88,20,R,R,Online
+R,22,71,90,25,R,R,None
+R,21,73,96,14,D,R,Online
+R,21,68,98,24,R,R,Television
+R,22,78,97,22,R,R,None
+R,25,69,97,24,D,R,Online
+R,22,71,88,19,R,R,Social Media
+R,23,69,96,22,R,R,Social Media
+R,14,74,90,23,R,O,Online
+R,18,66,99,20,D,R,None
+R,27,71,92,13,D,R,Social Media
+R,14,73,93,23,R,R,None
+R,21,64,92,17,R,R,Online
+R,22,71,94,13,R,R,None
+R,25,67,92,23,R,O,Social Media
+R,18,77,88,27,R,R,Social Media
+R,21,74,91,21,R,O,Online
+R,11,61,105,24,R,D,Social Media
+R,22,75,85,18,R,R,Online
+R,17,71,93,19,R,R,Television
+R,19,67,92,26,D,R,Online
+R,14,68,95,18,O,O,Social Media
+R,22,64,78,23,R,R,Social Media
+R,23,72,84,17,R,O,Social Media
+R,18,62,91,21,D,R,Online
+R,29,69,85,32,R,R,Social Media
+R,23,72,88,25,O,R,Online
+R,25,70,93,30,R,R,None
+R,30,74,90,28,D,R,None
+R,17,70,86,23,R,R,Social Media
+R,24,82,89,14,R,R,Television
+R,25,66,99,23,R,R,Social Media
+R,20,78,98,20,R,R,Social Media
+R,22,62,88,15,R,R,Social Media
+R,15,65,98,11,R,R,Online
+R,22,65,93,12,R,R,Online
+R,16,62,94,19,R,R,None
+R,24,77,85,24,R,R,None
+R,16,75,82,9,R,R,Social Media
+R,22,77,97,26,R,R,Online
+R,16,67,86,11,R,R,Online
+R,19,70,87,18,R,R,Television
+R,12,76,91,26,R,R,Social Media
+R,21,75,82,24,R,R,Social Media
+R,25,73,93,21,R,D,Online
+R,21,71,97,20,R,R,Social Media
+R,11,64,89,22,R,R,Social Media
+R,17,72,81,18,R,O,Social Media
+R,28,69,87,20,O,R,Online
+R,29,67,87,20,O,R,Social Media
+R,14,78,95,28,R,R,Online
+R,18,66,95,26,D,R,Television
+R,22,71,91,25,O,D,Social Media
+R,22,73,88,22,R,R,None
+R,17,75,89,23,R,R,Television
+R,15,72,93,24,R,R,Social Media
+R,19,80,94,22,D,R,Online
+R,25,72,99,18,R,R,Print
+R,20,68,84,25,R,R,Print
+R,17,71,92,23,R,R,Social Media
+R,17,73,91,18,D,R,Online
+R,28,59,81,18,R,R,Print
+R,18,70,89,15,O,R,None
+R,24,70,87,12,O,R,Online
+R,27,69,84,18,R,O,Social Media
+R,22,70,91,24,R,R,Online
+R,18,60,78,27,R,R,None
+R,20,72,95,23,O,R,Social Media
+R,18,70,97,24,R,R,Social Media
+R,26,68,96,16,R,O,Social Media
+R,19,56,95,13,R,R,Online
+R,28,68,91,18,R,R,None
+R,17,71,91,21,R,O,Online
+R,17,70,89,18,R,R,Online
+R,21,67,86,25,O,D,Social Media
+R,20,72,91,22,O,R,Online
+R,17,65,94,17,R,R,None
+R,12,73,83,27,R,D,Online
+R,20,74,89,17,R,R,Social Media
+R,16,75,88,14,R,R,None
+R,25,74,92,21,O,R,None
+R,15,68,86,22,R,R,Print
+R,26,70,95,12,R,R,Social Media
+R,17,76,87,20,R,R,Online
+R,21,73,96,11,R,R,Social Media
+R,24,72,87,21,R,R,Online
+R,17,76,96,19,D,O,None
+R,23,67,88,17,R,R,Online
+R,20,70,93,15,R,R,Online
+R,14,77,91,19,R,R,Television
+R,19,69,90,15,R,D,Print
+R,28,71,97,28,R,R,Social Media
+R,19,69,91,23,R,D,Social Media
+R,16,76,92,29,R,R,Social Media
+R,20,71,89,22,R,R,None
+R,22,70,88,24,R,R,Social Media
+R,25,67,101,34,R,O,None
+R,26,68,89,12,R,R,Online
+R,21,62,91,10,D,R,Social Media
+R,26,72,92,15,R,R,Print
+R,16,74,91,25,R,R,None
+R,8,63,97,13,R,D,Online
+R,18,72,84,28,O,R,None
+R,17,72,88,27,O,R,Online
+R,8,71,84,32,R,D,Online
+R,23,70,87,10,R,R,Social Media
+R,16,78,92,15,R,R,None
+R,19,72,94,24,R,R,Online
+R,12,77,104,19,R,R,Social Media
+R,23,72,93,24,O,R,None
+R,29,72,89,15,R,D,Social Media
+R,16,67,85,22,D,D,Social Media
+R,19,83,92,21,O,R,Social Media
+R,30,70,95,21,R,R,Social Media
+R,25,68,88,26,R,R,Print
+R,30,72,91,17,R,R,Online
+R,20,72,91,22,R,R,Online
+R,19,74,88,14,R,R,Print
+R,17,65,94,19,R,R,None
+R,27,69,83,12,R,D,Social Media
+R,14,78,100,17,R,R,None
+R,22,68,90,20,R,R,None
+R,20,68,92,25,R,O,Television
+R,31,73,91,18,R,R,Online
+R,17,67,83,20,R,D,None
+R,12,76,93,25,R,R,Social Media
+R,21,72,89,12,D,R,Social Media
+R,20,70,85,20,R,R,Social Media
+R,16,62,92,20,R,O,Social Media
+R,21,68,80,26,R,R,Social Media
+R,19,80,98,20,R,O,Online
+R,17,69,85,16,R,R,None
+R,23,73,89,11,R,R,Online
+R,18,65,99,17,R,R,Print
+R,11,62,83,26,R,R,Social Media
+R,7,74,98,30,R,R,Social Media
+R,17,77,94,27,O,R,Online
+R,27,62,94,16,R,R,Social Media
+R,24,74,79,20,R,O,Social Media
+R,26,72,89,25,R,R,Print
+R,25,68,83,18,R,R,Television
+R,22,79,86,15,O,R,Print
+R,12,65,92,20,R,R,None
+R,21,69,86,15,R,R,Social Media
+D,112,53,42,17,D,D,Print
+D,12,18,21,32,R,D,None
+D,64,62,-12,79,D,D,None
+D,102,38,37,66,D,D,Online
+D,91,65,8,56,D,D,Social Media
+D,96,40,-1,47,D,D,Print
+D,89,25,44,41,D,D,Online
+D,91,13,26,48,D,O,None
+D,80,13,30,55,D,D,Social Media
+D,62,37,26,87,D,D,Online
+D,55,0,6,53,O,D,None
+D,81,9,20,48,R,O,Print
+D,72,79,16,58,D,D,Online
+D,62,36,7,73,O,D,Television
+D,88,67,-14,83,D,O,Social Media
+D,83,73,30,59,D,R,Social Media
+D,109,42,7,35,D,D,Television
+D,58,40,46,59,D,D,Social Media
+D,70,44,40,49,D,D,Television
+D,79,54,14,36,D,D,Online
+D,52,56,26,22,D,D,Television
+D,74,0,39,67,D,D,None
+D,66,41,14,65,D,D,Social Media
+D,37,52,80,50,D,D,Social Media
+D,74,37,31,36,O,R,None
+D,69,45,18,45,D,D,Television
+D,103,58,21,30,D,D,Social Media
+D,68,37,19,39,O,D,Social Media
+D,91,71,46,48,O,D,None
+D,83,49,45,51,D,D,Social Media
+D,55,8,23,49,D,O,Social Media
+D,87,36,17,62,D,D,Television
+D,78,51,32,4,O,O,Social Media
+D,83,43,8,92,D,D,Print
+D,93,13,21,87,D,D,Social Media
+D,82,2,16,59,D,R,None
+D,112,39,-8,22,D,D,Social Media
+D,82,54,9,66,R,D,None
+D,55,26,-2,3,D,R,Online
+D,95,48,39,79,D,D,Print
+D,56,52,-3,69,R,D,None
+D,42,59,18,23,O,R,Social Media
+D,64,52,1,64,D,D,Print
+D,65,45,22,48,R,O,Online
+D,68,9,11,53,R,D,Social Media
+D,112,30,67,46,O,D,Online
+D,113,57,13,55,D,D,Online
+D,95,49,35,71,O,R,Online
+D,55,22,28,34,D,R,Social Media
+D,80,46,34,-11,D,O,Television
+D,90,38,40,83,D,D,Social Media
+D,77,65,10,9,D,O,Social Media
+D,83,39,-3,59,D,D,Social Media
+D,61,32,33,51,R,D,Social Media
+D,54,35,1,57,R,R,Print
+D,108,22,47,73,O,D,Television
+D,85,66,-2,50,D,O,Online
+D,72,43,-31,59,O,D,Social Media
+D,87,28,-1,31,D,D,None
+D,121,48,10,55,D,D,Online
+D,87,57,58,48,D,D,Television
+D,108,32,36,64,D,D,Social Media
+D,107,34,51,65,R,D,None
+D,72,39,-6,43,D,O,Social Media
+D,95,0,42,25,O,R,Social Media
+D,67,43,8,26,D,D,Social Media
+D,51,41,37,33,D,D,Social Media
+D,56,35,-19,55,O,D,Television
+D,77,20,40,35,O,D,None
+D,116,61,14,52,D,D,Television
+D,82,31,16,74,D,D,Social Media
+D,64,43,46,40,D,D,None
+D,85,82,27,63,D,D,Online
+D,94,28,22,46,O,D,Online
+D,54,27,36,43,D,O,Social Media
+D,59,43,2,41,D,D,Online
+D,41,34,-7,51,D,D,Print
+D,55,30,42,40,D,R,Social Media
+D,62,48,48,71,D,D,None
+D,74,45,30,49,D,D,Social Media
+D,108,19,20,63,R,D,Online
+D,98,12,48,82,O,D,Online
+D,85,52,23,60,D,D,Social Media
+D,69,23,28,19,D,D,Social Media
+D,79,21,22,24,D,D,Social Media
+D,91,65,35,42,O,D,Social Media
+D,70,42,-3,68,R,D,Online
+D,101,29,11,44,O,O,Social Media
+D,102,55,16,44,D,D,Social Media
+D,57,66,-12,59,O,D,Online
+D,65,60,35,51,D,D,Social Media
+D,104,20,24,50,O,D,Social Media
+D,46,28,6,46,O,D,Social Media
+D,88,46,27,72,O,D,Print
+D,85,13,23,48,D,D,Online
+D,144,32,6,57,R,D,Online
+D,25,40,21,60,R,O,Social Media
+D,63,39,5,56,D,D,Online
+D,93,44,31,56,D,O,Online
+D,113,44,-8,29,D,O,Social Media
+D,97,58,23,96,D,D,Social Media
+D,51,39,37,60,D,D,Social Media
+D,125,23,24,25,O,D,Social Media
+D,45,38,4,83,D,D,Online
+D,58,36,-2,45,D,D,Online
+D,79,41,-12,79,D,D,Television
+D,125,70,29,69,D,D,None
+D,90,51,24,44,D,D,None
+D,95,76,21,51,D,D,Social Media
+D,115,62,34,34,O,D,Online
+D,100,76,-7,12,O,D,Social Media
+D,56,13,31,32,R,D,Print
+D,94,26,-6,51,D,D,None
+D,78,29,14,43,D,R,Social Media
+D,116,34,-22,65,D,D,Social Media
+D,75,32,-12,44,D,D,None
+D,49,49,6,27,D,D,Television
+D,90,15,26,33,D,O,None
+D,87,29,25,2,D,D,Print
+D,80,29,39,67,O,D,Online
+D,59,33,29,60,D,D,Online
+D,63,28,29,55,D,D,Print
+D,80,64,1,52,D,D,Social Media
+D,101,55,-3,58,D,D,Social Media
+D,73,45,8,37,O,O,Social Media
+D,63,12,-16,23,O,D,Online
+D,26,99,18,51,O,D,Online
+D,90,59,15,40,D,D,None
+D,89,65,10,59,O,D,Social Media
+D,106,2,24,64,D,D,Print
+D,109,36,-9,26,O,D,Print
+D,77,55,-18,19,O,O,Social Media
+D,106,48,31,75,O,D,Online
+D,80,52,0,26,R,D,Online
+D,66,52,2,27,D,R,Online
+D,63,31,11,50,R,O,Social Media
+D,73,35,5,23,R,D,None
+D,85,21,45,57,D,R,Online
+D,79,62,41,35,O,D,Social Media
+D,84,1,21,77,D,O,Online
+D,84,34,16,19,D,D,Television
+D,94,56,8,65,D,D,Social Media
+D,75,36,40,42,D,D,Print
+D,113,69,25,92,O,R,Social Media
+D,89,57,24,41,D,D,Print
+D,56,23,-10,29,D,O,Television
+D,74,39,38,38,O,D,Online
+D,90,40,8,51,D,O,Television
+D,72,45,27,46,D,O,Print
+D,87,29,21,37,D,D,Social Media
+D,89,28,46,48,R,D,Print
+D,106,35,47,53,D,D,Online
+D,67,58,46,1,D,D,Online
+D,80,62,18,18,D,O,Social Media
+D,69,28,18,17,O,R,None
+D,57,41,22,66,R,O,Online
+D,43,20,30,45,D,O,Online
+D,84,25,19,46,O,D,None
+D,92,28,-7,79,O,D,Social Media
+D,93,14,2,28,O,D,Television
+D,52,0,-2,93,D,D,Social Media
+D,57,55,7,45,D,D,Social Media
+D,57,48,46,21,D,O,Television
+D,66,23,18,32,D,D,None
+D,83,59,33,44,D,D,Social Media
+D,92,76,18,61,O,D,Social Media
+D,64,-11,39,45,O,D,None
+D,23,63,-16,32,O,D,Social Media
+D,99,65,11,28,D,D,Social Media
+D,92,43,18,64,D,R,Online
+D,66,30,28,48,D,D,Television
+D,59,18,15,56,D,D,Social Media
+D,74,22,16,47,D,R,Television
+D,82,27,43,20,D,D,None
+D,94,-2,32,70,D,D,Social Media
+D,108,27,13,52,O,D,None
+D,63,60,19,81,O,R,Online
+D,86,25,34,85,D,O,Social Media
+D,107,71,-12,53,D,R,None
+D,62,39,37,45,D,D,Social Media
+D,76,42,47,-1,R,D,Online
+D,45,50,8,50,O,R,Print
+D,86,21,21,47,O,D,Online
+D,67,25,-11,79,R,D,Social Media
+D,62,32,18,38,R,D,Television
+D,64,75,25,72,D,D,None
+D,89,49,5,36,D,O,Television
+D,37,38,18,42,D,D,Social Media
+D,71,18,1,56,D,R,Television
+D,60,38,18,66,D,D,Television
+D,61,48,15,47,D,D,Social Media
+D,89,33,30,71,D,D,Social Media
+D,87,22,35,82,O,D,Online
+D,78,21,53,45,D,D,None
+D,91,36,37,27,D,O,Social Media
+D,68,47,12,48,R,O,Social Media
+D,40,59,16,70,O,R,None
+D,103,13,55,38,D,O,None
+D,75,24,-4,51,D,D,Social Media
+D,73,-1,18,62,R,D,Social Media
+D,83,42,68,44,R,D,Social Media
+D,95,54,12,36,D,D,Social Media
+D,89,45,-4,46,O,D,Television
+D,99,65,26,67,R,R,Online
+D,81,52,-5,20,O,D,Online
+D,70,28,-8,32,R,D,Online
+D,74,69,16,35,D,O,None
+D,96,49,-4,22,D,D,Social Media
+D,63,52,11,36,D,D,Social Media
+D,61,22,45,103,D,D,Television
+D,86,35,59,25,D,D,Social Media
+D,92,16,6,20,O,D,Online
+D,46,39,11,27,D,D,None
+D,96,67,25,40,D,D,Social Media
+D,80,31,-1,22,R,D,Social Media
+D,76,41,20,67,D,D,Television
+D,102,56,-1,47,D,D,Television
+D,110,8,4,19,O,D,Television
+D,57,13,18,36,O,D,None
+D,100,21,18,45,D,D,Social Media
+D,67,46,36,52,D,D,Social Media
+D,83,42,12,71,D,D,Social Media
+D,90,65,31,46,D,D,Print
+D,83,15,-14,18,D,D,Social Media
+D,51,31,25,59,D,O,Social Media
+D,70,-2,37,39,O,D,Online
+D,111,72,19,28,D,O,Online
+D,83,62,17,73,D,D,Social Media
+D,63,27,12,29,D,D,Online
+D,67,35,23,73,D,D,Online
+D,101,37,37,47,D,D,Social Media
+D,87,76,39,69,D,D,Print
+D,62,41,25,65,D,D,Online
+D,80,48,10,46,O,D,Print
+D,92,54,55,90,D,D,Print
+D,114,54,40,61,D,O,Social Media
+D,62,7,2,37,D,D,Social Media
+D,72,55,24,46,D,D,Online
+D,100,22,-13,46,D,D,Social Media
+D,71,39,-13,77,D,D,Online
+D,109,1,4,76,D,D,Social Media
+D,101,44,21,81,D,D,Social Media
+D,47,20,9,89,D,D,Social Media
+D,88,-4,45,56,D,D,Online
+D,52,7,62,52,D,D,Social Media
+D,51,12,38,71,D,D,Social Media
+D,81,51,45,63,D,O,Social Media
+D,81,46,37,63,O,D,None
+D,79,54,42,47,R,D,Online
+D,105,29,69,76,D,R,Social Media
+D,86,44,6,62,D,D,Online
+D,67,48,-4,71,O,R,Social Media
+D,82,38,72,48,D,D,Online
+D,70,18,9,50,D,D,Social Media
+D,79,63,-6,32,D,D,Social Media
+D,57,73,-1,67,D,D,Social Media
+D,78,80,35,25,D,D,Social Media
+D,82,58,9,23,D,D,Social Media
+D,66,36,12,75,O,D,Social Media
+D,81,37,14,-4,D,D,Social Media
+D,67,34,38,62,D,R,Social Media
+D,67,35,19,26,D,O,Social Media
+D,76,39,38,71,D,D,Online
+D,90,1,22,56,D,D,Online
+D,76,40,43,52,O,D,None
+D,84,45,36,61,R,D,None
+D,99,21,30,55,O,D,None
+D,74,5,34,39,D,D,Social Media
+D,78,33,-17,27,D,R,Social Media
+D,90,-22,18,53,D,R,Online
+D,55,73,12,40,D,O,Online
+D,91,54,-11,62,D,D,Online
+D,69,20,24,28,D,D,Social Media
+D,57,40,32,18,O,D,Social Media
+D,45,37,31,59,D,D,None
+D,66,7,6,77,R,O,Social Media
+D,57,22,27,55,O,R,None
+D,56,59,28,44,O,D,Social Media
+D,113,17,57,50,D,D,Social Media
+D,56,25,-2,74,D,D,Online
+D,100,25,34,39,D,D,Print
+D,91,65,13,51,D,O,None
+D,62,36,25,49,D,D,Social Media
+D,68,51,-3,52,D,D,None
+D,72,55,2,72,D,O,Online
+D,84,32,-11,59,D,D,Social Media
+D,73,17,18,53,D,O,Social Media
+D,97,43,24,18,D,D,Social Media
+D,74,33,15,49,D,D,None
+D,37,69,3,62,O,R,Online
+D,78,30,32,56,O,D,Print
+D,43,34,38,31,D,D,Print
+D,99,54,14,37,R,O,None
+D,65,27,48,36,D,D,Online
+D,58,40,-6,30,O,O,Online
+D,68,50,34,69,D,D,Social Media
+D,92,32,36,68,O,D,Social Media
+D,42,16,3,67,D,D,Online
+D,85,46,32,38,D,D,Television
+D,61,34,34,47,D,D,Social Media
+D,80,0,43,59,D,O,Social Media
+D,94,45,28,68,D,D,Social Media
+D,91,43,2,49,R,D,Television
+D,110,6,9,43,D,O,Online
+D,83,29,10,4,O,D,Social Media
+D,66,36,40,46,O,D,Online
+D,123,29,8,34,D,D,Online
+D,74,51,-3,59,D,D,Online
+D,96,8,30,41,D,R,None
+D,99,21,37,62,R,D,Print
+D,89,31,62,45,O,D,Social Media
+D,109,69,36,34,D,R,Social Media
+D,76,37,20,7,O,O,Social Media
+D,55,20,23,33,D,R,Social Media
+D,73,71,2,58,D,D,Social Media
+D,69,35,64,41,D,D,Online
+D,87,51,4,57,O,D,None
+D,61,62,23,0,D,D,Social Media
+D,94,48,35,53,D,O,Television
+D,57,66,-11,45,D,O,Online
+D,115,24,39,44,D,D,None
+D,109,72,26,71,D,D,Social Media
+D,71,4,17,57,R,D,Social Media
+D,83,20,29,54,O,O,None
+D,73,28,11,90,D,D,None
+D,56,45,-25,46,D,D,Television
+D,27,31,33,64,O,D,Social Media
+D,79,52,11,43,D,D,None
+D,79,48,51,39,O,O,Television
+D,113,54,3,67,D,O,Print
+D,40,70,34,47,D,D,Social Media
+D,67,11,31,35,D,O,Social Media
+D,98,59,19,43,D,O,Online
+D,87,35,-3,46,D,D,Social Media
+D,82,24,24,60,D,D,None
+D,68,4,-7,50,O,O,Television
+D,84,23,5,52,O,D,Print
+D,75,34,5,87,D,D,Online
+D,82,1,45,15,D,D,Television
+D,68,33,-12,43,O,D,Online
+D,104,50,3,48,D,D,Online
+D,101,14,-7,22,D,D,Print
+D,107,40,28,102,D,D,Social Media
+D,73,13,30,39,D,D,Social Media
+D,74,39,55,71,D,O,None
+D,73,58,5,39,O,D,Online
+D,107,-4,53,35,D,O,Online
+D,74,86,30,30,O,D,Online
+D,82,17,24,29,D,O,Online
+D,88,59,36,-3,D,D,None
+D,94,82,0,66,O,D,Online
+D,75,21,16,41,D,R,Online
+D,127,26,7,54,O,D,Social Media
+D,61,60,63,44,D,D,Social Media
+D,51,24,4,54,D,D,None
+D,81,21,22,32,D,O,Television
+D,115,72,30,46,D,D,Social Media
+D,81,75,-25,60,D,O,Social Media
+D,82,35,33,59,R,O,Social Media
+D,97,86,-18,49,D,D,Television
+D,78,78,28,17,D,D,Social Media
+D,82,39,-15,62,D,D,Social Media
+D,104,24,7,63,O,O,Online
+D,82,27,22,84,D,O,Online
+D,65,68,6,16,D,D,Social Media
+D,88,51,-4,56,O,O,Television
+D,58,53,58,48,O,O,Online
+D,51,40,24,75,D,O,None
+D,78,44,60,54,O,D,Social Media
+D,58,30,7,25,D,D,Online
+D,92,63,10,36,D,D,Social Media
+D,77,33,59,61,O,D,Television
+D,65,80,21,33,D,D,Online
+D,112,52,19,5,O,O,Print
+D,78,60,44,87,D,O,None
+D,108,70,7,57,D,D,Social Media
+D,78,39,-7,66,D,D,None
+D,73,5,27,35,D,D,Online
+D,87,28,11,43,D,O,Online
+D,101,52,17,8,D,D,Social Media
+D,134,64,30,83,D,D,None
+D,59,44,-12,65,R,D,Social Media
+D,76,57,-11,31,D,D,Print
+D,102,59,43,55,O,O,Online
+D,87,61,20,62,D,D,Television
+D,76,55,40,30,D,D,Print
+D,54,36,17,31,D,D,Television
+D,74,60,31,62,O,D,Television
+D,76,30,29,59,O,O,Online
+D,78,47,4,66,R,D,Online
+D,112,30,45,45,D,O,Social Media
+D,71,50,37,40,D,D,None
+D,48,50,23,70,D,D,Online
+D,90,38,20,60,D,D,Online
+D,78,41,66,61,D,D,None
+D,76,49,-13,6,O,O,Online
+D,93,17,0,13,D,O,Television
+D,22,60,54,41,D,D,None
+D,69,45,17,46,D,O,Online
+D,77,51,-15,68,O,D,Social Media
+D,92,37,12,54,D,D,Online
+D,75,2,33,37,D,O,None
+D,60,55,43,30,D,D,Social Media
+D,87,35,30,97,D,D,None
+D,80,52,8,68,O,R,Social Media
+D,82,81,-11,59,D,D,Television
+D,103,17,52,70,D,D,Social Media
+D,69,67,19,47,O,D,Social Media
+D,55,33,8,28,D,D,Social Media
+D,54,39,9,36,D,D,Print
+I,30,55,59,39,D,D,Social Media
+I,26,55,36,76,D,O,Social Media
+I,40,48,47,38,R,D,Social Media
+I,58,61,63,43,D,R,Social Media
+I,39,65,56,55,D,R,Online
+I,48,58,55,47,R,R,Online
+I,29,44,52,33,R,R,Online
+I,38,56,43,52,O,D,Online
+I,46,64,49,40,R,R,Social Media
+I,36,53,42,37,D,D,Social Media
+I,48,54,58,39,D,R,Social Media
+I,47,48,54,62,R,R,Social Media
+I,34,66,45,48,D,D,Print
+I,32,53,62,55,O,R,Television
+I,64,92,65,44,D,R,Social Media
+I,38,70,60,49,R,D,Social Media
+I,40,58,60,48,D,D,Print
+I,39,60,45,69,D,D,Social Media
+I,34,53,61,80,O,D,None
+I,31,63,38,56,O,D,Television
+I,29,60,60,39,R,R,Online
+I,49,43,64,46,D,R,Television
+I,30,42,54,50,D,D,Social Media
+I,47,66,49,53,R,D,Social Media
+I,54,37,45,41,R,R,Online
+I,52,56,37,55,D,D,Online
+I,39,77,48,56,D,O,Social Media
+I,35,43,48,47,D,R,Television
+I,29,63,62,54,R,D,Television
+I,40,76,39,31,R,R,None
+I,38,65,49,51,D,D,None
+I,42,73,46,57,D,R,Social Media
+I,34,50,47,45,O,D,Online
+I,46,66,57,44,D,D,Social Media
+I,47,62,50,48,D,R,None
+I,51,74,51,68,D,D,Online
+I,62,85,55,46,D,D,Online
+I,42,61,34,49,O,D,Print
+I,34,71,49,37,D,D,None
+I,39,56,51,60,O,D,Social Media
+I,24,56,47,45,D,O,Television
+I,41,54,58,65,D,D,Social Media
+I,36,46,36,38,D,D,Social Media
+I,44,61,22,55,R,O,Social Media
+I,37,60,38,34,O,R,Online
+I,26,67,55,64,D,D,Online
+I,40,58,68,53,R,O,Online
+I,26,51,66,61,D,D,Social Media
+I,49,59,36,56,R,D,Social Media
+I,22,78,42,69,D,R,Social Media
+I,39,65,61,69,R,D,None
+I,45,63,50,38,D,R,Television
+I,25,71,55,57,D,O,None
+I,54,78,57,42,D,D,Social Media
+I,31,77,61,48,R,D,Social Media
+I,35,56,66,37,D,R,Social Media
+I,42,59,51,50,D,D,Social Media
+I,37,56,50,36,R,R,Social Media
+I,30,58,30,43,D,D,Print
+I,44,65,58,50,R,O,Television
+I,35,55,49,43,R,R,Social Media
+I,45,48,36,50,O,O,Online
+I,35,58,51,60,O,R,Online
+I,30,74,54,45,O,O,Online
+I,39,79,37,54,D,D,Social Media
+I,46,56,45,47,R,D,Social Media
+I,42,68,51,53,R,D,Social Media
+I,39,59,38,53,O,O,Print
+I,21,59,50,57,R,O,Social Media
+I,55,53,51,53,D,R,Social Media
+I,40,44,66,34,O,D,None
+I,31,78,63,37,D,O,Social Media
+I,38,68,43,62,O,R,Social Media
+I,43,42,67,43,R,O,Social Media
+I,25,57,57,53,R,D,Social Media
+I,47,76,32,49,R,R,None
+I,42,61,40,51,D,R,Print
+I,52,62,42,69,O,O,Social Media
+I,50,68,48,36,D,D,Print
+I,35,70,45,63,R,R,Online
+I,35,66,38,54,R,R,Social Media
+I,30,64,37,52,D,R,Social Media
+I,36,75,63,43,O,R,Online
+I,49,77,52,59,D,R,Social Media
+I,58,62,51,54,D,D,Online
+I,49,58,50,52,D,D,Online
+I,22,60,58,40,O,D,Television
+I,48,63,55,59,D,D,Social Media
+I,50,53,54,47,O,R,Social Media
+I,46,66,74,46,D,D,Social Media
+I,31,47,45,62,D,D,Print
+I,51,82,58,57,R,D,Online
+I,47,35,63,44,O,O,Online
+I,47,62,53,55,D,D,Television
+I,36,59,37,41,R,O,Online
+I,48,65,46,58,O,R,Social Media
+I,41,56,55,42,R,R,None
+I,39,84,45,32,D,O,Social Media
+I,55,59,52,67,O,R,Social Media
+I,48,60,45,46,O,R,None
+I,11,71,55,57,O,R,Online
+I,36,67,64,39,D,D,None
+I,25,62,43,49,R,R,Online
+I,46,58,38,57,D,O,Online
+I,36,58,43,60,R,D,Social Media
+I,49,46,49,57,R,R,Social Media
+I,45,66,43,56,R,R,Social Media
+I,40,64,37,48,D,D,None
+I,39,50,67,54,D,D,Television
+I,36,58,45,58,D,D,Social Media
+I,42,73,59,37,O,R,Television
+I,29,73,40,48,O,D,Print
+I,47,48,46,43,D,R,Online
+I,36,68,54,36,R,R,Social Media
+I,33,61,48,62,R,D,Television
+I,37,64,58,61,R,D,Social Media
+I,59,51,55,47,R,R,Print
+I,22,58,51,43,R,D,None
+I,37,39,47,61,D,D,Print
+I,41,53,37,50,O,R,Social Media
+I,35,57,42,42,R,O,Online
+I,36,73,38,45,R,O,Social Media
+I,44,49,48,29,O,O,Television
+I,42,63,50,47,O,D,Television
+I,33,61,56,73,D,R,Television
+I,46,46,44,47,O,R,Television
+I,42,63,41,41,O,D,None
+I,47,76,50,59,D,O,Print
+I,27,69,47,54,D,D,Print
+I,32,71,49,54,R,R,Social Media
+I,38,58,75,44,D,D,Online
+I,50,70,61,47,D,R,Television
+I,35,36,43,55,O,R,Online
+I,30,47,59,39,R,R,None
+I,48,58,43,57,D,D,Social Media
+I,45,61,33,55,D,D,Television
+I,28,65,63,40,D,D,Online
+I,60,67,51,53,O,O,Online
+I,55,55,51,41,D,R,None
+I,26,55,43,51,R,D,None
+I,62,57,62,52,R,O,Online
+I,23,54,52,44,D,R,Social Media
+I,41,59,63,40,D,R,Social Media
+I,29,69,53,44,D,D,None
+I,36,65,56,46,R,R,Online
+I,37,56,41,47,O,D,Social Media
+I,43,53,52,44,D,D,Online
+I,29,59,39,43,D,D,Online
+I,12,58,26,58,D,D,Online
+I,39,72,59,38,D,D,Social Media
+O,23,17,74,38,R,O,Social Media
+O,32,30,64,36,O,D,Social Media
+O,22,46,63,24,O,O,Online
+O,38,47,64,41,O,O,Social Media
+O,30,33,42,28,O,O,Online
+O,36,38,50,27,R,R,None
+O,20,58,53,26,O,O,Print
+O,28,29,58,31,R,D,Online
+O,33,58,64,24,O,O,Social Media
+O,29,43,72,11,O,R,Television
+O,47,50,76,20,O,O,Social Media
+O,10,35,60,32,R,O,Online
+O,38,29,66,46,O,O,None
+O,30,44,57,37,D,O,Online
+O,39,44,62,39,O,O,Online
+O,29,36,69,35,O,O,Social Media
+O,3,31,65,38,O,O,Social Media
+O,34,53,55,44,O,O,Online
+O,28,27,67,20,O,O,Social Media
+O,20,54,68,14,D,R,Online
+O,23,34,54,29,O,O,None
+O,31,21,65,20,O,D,Social Media
+O,55,62,70,13,R,R,Social Media
+O,32,44,68,34,O,D,Online
+O,20,29,58,17,O,O,Television
+O,49,36,68,61,O,R,Social Media
+O,26,32,73,31,O,O,None
+O,22,43,50,37,O,O,Social Media
+O,18,41,38,38,D,O,Social Media
+O,23,28,69,20,O,O,Online
+O,49,43,52,29,R,D,None
+O,39,33,53,19,D,R,Social Media
+O,37,46,68,34,O,R,Television
+O,31,46,46,38,D,O,Online
+O,33,40,63,29,R,O,Online
+O,36,32,84,6,O,O,Online
+O,32,35,49,39,O,R,Print
+O,32,30,56,24,D,O,Social Media
+O,40,48,65,45,O,O,Print
+O,28,54,62,33,O,O,None
+O,33,41,49,25,O,O,Social Media
+O,21,43,62,22,D,O,Social Media
+O,46,38,57,32,R,O,Social Media
+O,44,42,50,18,D,O,Print
+O,12,59,70,36,D,D,None
+O,28,43,77,36,O,O,Social Media
+O,35,53,45,32,O,O,Social Media
+O,35,42,71,40,O,R,Online
+O,38,26,62,20,O,O,Online
+O,26,28,65,21,O,R,Social Media
