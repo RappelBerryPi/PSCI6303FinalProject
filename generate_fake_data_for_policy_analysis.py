@@ -24,15 +24,15 @@ with open("0-data/experiment_data.csv", "w") as f:
 
         # randomly generate the effected and non-effected users
         if (random.random() > 0.6):
-            number_of_troll_tweets_interacted_with = 0
+            number_of_troll_tweets_seen = random.randint(0, 250)
+            number_of_troll_tweets_interacted_with = random.randint(0, number_of_troll_tweets_seen)
             number_of_troll_tweets_reported = 0
-            number_of_troll_tweets_seen = 0
-            old_voting_plan = voting_plan_2024
-            voting_plan_2024 = general_voting_preference
-            if (random.random() < 0.1):
-                voting_plan_2024 = old_voting_plan
         else:
             number_of_troll_tweets_seen = random.randint(0, 250)
             number_of_troll_tweets_interacted_with = random.randint(0, number_of_troll_tweets_seen)
             number_of_troll_tweets_reported = random.randint(0, number_of_troll_tweets_seen - number_of_troll_tweets_interacted_with)
+            old_voting_plan = voting_plan_2024
+            voting_plan_2024 = general_voting_preference
+            if (random.random() < 0.1):
+                voting_plan_2024 = old_voting_plan
         f.write("{},{},{},{},{}\n".format(general_voting_preference, number_of_troll_tweets_seen, number_of_troll_tweets_interacted_with, number_of_troll_tweets_reported, voting_plan_2024))
