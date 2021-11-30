@@ -55,8 +55,8 @@ d <- fread(path)
 let's start with summarizing the data
 ```{r}
 glimpse(d)
-percentage.control <- percentage(d[number_of_troll_tweets_seen == 0,], d)
-percentage.treatment <- percentage(d[number_of_troll_tweets_seen != 0,], d)
-percentage.control.changed <- percentage(d[number_of_troll_tweets_seen == 0 & `2024_voting_plan` != general_voting_preference], d[number_of_troll_tweets_seen == 0,])
-percentage.treatment.changed <- percentage(d[number_of_troll_tweets_seen != 0 & `2024_voting_plan` != general_voting_preference], d[number_of_troll_tweets_seen != 0,])
+percentage.control <- percentage(d[number_of_troll_tweets_reported == 0,], d)
+percentage.treatment <- percentage(d[number_of_troll_tweets_reported != 0,], d)
+percentage.control.changed <- percentage(d[number_of_troll_tweets_reported == 0 & `2024_voting_plan` != general_voting_preference], d[number_of_troll_tweets_reported == 0,])
+percentage.treatment.changed <- percentage(d[number_of_troll_tweets_reported != 0 & `2024_voting_plan` != general_voting_preference], d[number_of_troll_tweets_reported != 0,])
 ```
