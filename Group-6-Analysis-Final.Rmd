@@ -144,4 +144,31 @@ ggplot(data = d.affected.democratic, aes(x = troll_tweets_total, fill = change_t
 Let's analyze this total data one more way. let's see if the medium at which the users get their
 information affects the way they let twitter affect them.
 ```{r}
+d.affected.total[, news_source_is_twitter := main_information_sorce == "Social Media"]
+ggplot(data = d.affected.total, aes(x = troll_tweets_total, fill = news_source_is_twitter)) +
+    geom_histogram(position = 'identity', alpha = 0.3, binwidth = 1)
+
+
+```
+
+let's do a did. First let's get the before grouping where people voted in 2012 what their voting preference is
+```{r}
+d.affected.total[, voted_preference.2012 := vote2012 == voting_preference ]
+d.affected.total[, voted_preference.2016 := vote2016 == voting_preference ]
+model.did <- lm(data = d.affected.total, voted_preference.2016 ~ affected + voted_preference.2012 + voted_preference.2012:affected)
+stargazer(model.did, type="text")
+```
+
+let's change affected to only be those users who also only get their news from twitter.
+```{r}
+d.affected.total[, affected := affected & main_information_sorce == "Social Media"]
+model.did.2 <- lm(data = d.affected.total, voted_preference.2016 ~ affected + voted_preference.2012 + voted_preference.2012:affected)
+stargazer(model.did, type="text")
+```
+
+let's plot this with point graph
+```{r}
+ggplot(data = d.affected.total, aes(x = troll_tweets_total, y = voted_preference.2016)) +
+  geom_point()
+
 ```
