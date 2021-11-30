@@ -58,7 +58,7 @@ glimpse(d)
 percentage.control <- percentage(d[number_of_troll_tweets_reported == 0,], d)
 percentage.treatment <- percentage(d[number_of_troll_tweets_reported != 0,], d)
 percentage.control.changed <- percentage(d[number_of_troll_tweets_reported == 0 & `2024_voting_plan` != general_voting_preference], d[number_of_troll_tweets_reported == 0,])
-percentage.treatment.changed <- percentage(d[number_of_troll_tweets_reported != 0 & `2024_voting_plan` != general_voting_preference], d[number_of_troll_tweets_reported != 0,])
+percentage.treatment.changed <- percentage(d[number_of_troll_tweets_reported > number_of_troll_tweets_interacted_with & `2024_voting_plan` != general_voting_preference], d[number_of_troll_tweets_reported > number_of_troll_tweets_interacted_with,])
 ```
 
 now let's do a DID by looking at our variables: treatment and number_of_troll_tweets_seen vs if their 2024_voting_plan is the same as their general_voting_preference. First we have to create some extra columns.
