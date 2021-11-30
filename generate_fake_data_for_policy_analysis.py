@@ -34,5 +34,5 @@ with open("0-data/experiment_data.csv", "w") as f:
         else:
             number_of_troll_tweets_seen = random.randint(0, 250)
             number_of_troll_tweets_interacted_with = random.randint(0, number_of_troll_tweets_seen)
-            number_of_troll_tweets_reported = random.randint(0, number_of_troll_tweets_seen)
+            number_of_troll_tweets_reported = random.randint(0, number_of_troll_tweets_seen - number_of_troll_tweets_interacted_with)
         f.write("{},{},{},{},{}\n".format(general_voting_preference, number_of_troll_tweets_seen, number_of_troll_tweets_interacted_with, number_of_troll_tweets_reported, voting_plan_2024))
