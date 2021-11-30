@@ -55,17 +55,16 @@ d <- fread(path)
 let's start with summarizing the data
 ```{r}
 glimpse(d)
-percentage.control <- percentage(d[number_of_troll_tweets_reported == 0,], d)
-percentage.treatment <- percentage(d[number_of_troll_tweets_reported != 0,], d)
-percentage.control.changed <- percentage(d[number_of_troll_tweets_reported == 0 & `2024_voting_plan` != general_voting_preference], d[number_of_troll_tweets_reported == 0,])
-percentage.treatment.changed <- percentage(d[number_of_troll_tweets_reported > number_of_troll_tweets_interacted_with & `2024_voting_plan` != general_voting_preference], d[number_of_troll_tweets_reported > number_of_troll_tweets_interacted_with,])
+percentage.control <- percentage(d[treated == FALSE,], d)
+percentage.treatment <- percentage(d[treated == TRUE,], d)
+percentage.control.changed <- percentage(d[treated == FALSE & voting_plan_2024 != general_voting_preference,], d[treated == FALSE,])
+percentage.treatment.changed <- percentage(d[treated == TRUE & voting_plan_2024 != general_voting_preference,], d[treated == TRUE,])
 ```
 
 now let's do a DID by looking at our variables: treatment and number_of_troll_tweets_seen vs if their 2024_voting_plan is the same as their general_voting_preference. First we have to create some extra columns.
 ```{r}
 mean_tweets <- mean(d$number_of_troll_tweets_seen)
-d <- d[,treated := number_of_troll_tweets_reported != 0]
-d <- d[,voting_plan_different := `2024_voting_plan` != general_voting_preference]
+d <- d[,voting_plan_different := voting_plan_2024 != general_voting_preference]
 d <- d[,affected := number_of_troll_tweets_interacted_with > number_of_troll_tweets_reported]
 model.did <- lm(data = d, voting_plan_different ~ treated + affected + treated:affected)
 stargazer(model.did, type = "text")
