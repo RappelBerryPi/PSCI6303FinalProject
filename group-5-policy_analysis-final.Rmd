@@ -49,6 +49,7 @@ print.percentage <- function(part, whole, rounding.digits = 3) {
 Load dataset `d` and inspect its structure.
 ```{r}
 path <- 'https://raw.githubusercontent.com/RappelBerryPi/PSCI6303FinalProject/main/0-data/experiment_data.csv'
+path <- './0-data/experiment_data.csv'
 d <- fread(path)
 ```
 
@@ -63,9 +64,9 @@ percentage.treatment.changed <- percentage(d[treated == TRUE & voting_plan_2024 
 
 now let's do a DID by looking at our variables: treatment and number_of_troll_tweets_seen vs if their 2024_voting_plan is the same as their general_voting_preference. First we have to create some extra columns.
 ```{r}
-mean_tweets <- mean(d$number_of_troll_tweets_seen)
+mean.troll.tweets <- mean(d$number_of_troll_tweets_seen)
 d <- d[,voting_plan_different := voting_plan_2024 != general_voting_preference]
-d <- d[,affected := number_of_troll_tweets_interacted_with > number_of_troll_tweets_reported]
+d <- d[,affected := number_of_troll_tweets_seen > mean.troll.tweets]
 model.did <- lm(data = d, voting_plan_different ~ treated + affected + treated:affected)
 stargazer(model.did, type = "text")
 ```
