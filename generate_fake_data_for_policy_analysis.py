@@ -39,11 +39,7 @@ with open("0-data/experiment_data.csv", "w") as f:
             # set the voting plan to be the same unless the following conditions are tru
             old_voting_plan = voting_plan_2024
             voting_plan_2024 = general_voting_preference
-            if number_of_troll_tweets_reported > number_of_troll_tweets_interacted_with:
-                if (random.random() < 0.1):
-                    voting_plan_2024 = old_voting_plan
-            else:
-                if (random.random() > 0.1):
-                    voting_plan_2024 = old_voting_plan
+            if (random.random() < 0.1):
+                voting_plan_2024 = old_voting_plan
             treated = True
         f.write("{},{},{},{},{},{}\n".format(general_voting_preference, number_of_troll_tweets_seen, number_of_troll_tweets_interacted_with, number_of_troll_tweets_reported, voting_plan_2024, treated))
