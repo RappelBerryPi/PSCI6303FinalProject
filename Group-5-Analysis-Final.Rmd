@@ -1,5 +1,5 @@
 ---
-title: 'Final Project: Group 6. Effect of Russian Trolls on the 2016 U.S. Presidential election.'
+title: 'Final Project: Group 5. Effect of Russian Trolls on the 2016 U.S. Presidential election.'
 author:
   - Ryan Appel
   - Angel Arribas

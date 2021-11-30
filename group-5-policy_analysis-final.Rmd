@@ -1,0 +1,53 @@
+---
+title: 'Final Project: Group 5. Effect of Russian Trolls on the 2016 U.S. Presidential election.'
+author:
+  - Ryan Appel
+  - Angel Arribas
+  - Drew Breyer
+  - Humza Kahn
+  - Devanshi Patel
+  - Hanna Shin
+  - Poonam Siyag
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+# Introduction
+## Getting started
+
+Loading packages is boring and time-consuming. First, you need to install packages. Second, you need to run them in R's environment.
+```{r, include=FALSE}
+if (!require("pacman")) install.packages("pacman")
+p_load(data.table, dplyr) # two modern packages to modify data objects in R
+p_load(stargazer) # a package to summaries regression results 
+p_load(ggplot2, ggpubr) # two packages to visualize data
+`%+%` <- function(x,y){paste0(x, y)} # collapse two strings into one
+theme_set(theme_pubr(border = TRUE)) # make figures beautiful and ascetic by default
+```
+
+## Custom Functions
+
+```{r}
+# The below function provides a percentage after being passed a part and whole data.table
+percentage <- function(part, whole, rounding.digits = 3) {
+    part.count <- nrow(part)
+    whole.count <- nrow(whole)
+    percentage <- part.count / whole.count
+    percentage <- percentage * 100
+    percentage <- round(percentage, rounding.digits)
+    return (percentage)
+}
+
+print.percentage <- function(part, whole, rounding.digits = 3) {
+    p <- percentage(part, whole, rounding.digits)
+    print( p %+% "%")
+}
+```
+
+## Loading data
+Load dataset `d` and inspect its structure.
+```{r}
+path <- 'https://raw.githubusercontent.com/RappelBerryPi/PSCI6303FinalProject/main/0-data/experiment_data.csv'
+d <- fread(path)
+```
