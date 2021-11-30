@@ -49,7 +49,6 @@ print.percentage <- function(part, whole, rounding.digits = 3) {
 Load dataset `d` and inspect its structure.
 ```{r}
 path <- 'https://raw.githubusercontent.com/RappelBerryPi/PSCI6303FinalProject/main/0-data/experiment_data.csv'
-path <- './0-data/experiment_data.csv'
 d <- fread(path)
 ```
 
