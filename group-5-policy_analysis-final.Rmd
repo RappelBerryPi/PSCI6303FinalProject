@@ -66,7 +66,7 @@ now let's do a DID by looking at our variables: treatment and number_of_troll_tw
 mean_tweets <- mean(d$number_of_troll_tweets_seen)
 d <- d[,treated := number_of_troll_tweets_reported != 0]
 d <- d[,voting_plan_different := `2024_voting_plan` != general_voting_preference]
-d <- d[,affected := number_of_troll_tweets_seen > mean_tweets]
+d <- d[,affected := number_of_troll_tweets_interacted_with > number_of_troll_tweets_reported]
 model.did <- lm(data = d, voting_plan_different ~ treated + affected + treated:affected)
 stargazer(model.did, type = "text")
 ```

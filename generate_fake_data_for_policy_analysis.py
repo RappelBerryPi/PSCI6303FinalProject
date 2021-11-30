@@ -37,6 +37,6 @@ with open("0-data/experiment_data.csv", "w") as f:
                 if (random.random() < 0.1):
                     voting_plan_2024 = old_voting_plan
             else:
-                if (random.random() > 0.3):
+                if (random.random() > 0.1):
                     voting_plan_2024 = old_voting_plan
         f.write("{},{},{},{},{}\n".format(general_voting_preference, number_of_troll_tweets_seen, number_of_troll_tweets_interacted_with, number_of_troll_tweets_reported, voting_plan_2024))
