@@ -172,3 +172,16 @@ ggplot(data = d.affected.total, aes(x = troll_tweets_total, y = voted_preference
   geom_point()
 
 ```
+
+
+```{r}
+print.percentage(d.affected.total[voted_preference.2012 == TRUE & affected == TRUE,], d.affected.total)
+print.percentage(d.affected.total[voted_preference.2012 == TRUE & affected == FALSE,], d.affected.total)
+print.percentage(d.affected.total[voted_preference.2012 == FALSE & affected == TRUE,], d.affected.total)
+print.percentage(d.affected.total[voted_preference.2012 == FALSE & affected == FALSE,], d.affected.total)
+print(" ")
+print.percentage(d.affected.total[voted_preference.2012 == TRUE & affected == TRUE,], d.affected.total[voted_preference.2012 == TRUE,])
+print.percentage(d.affected.total[voted_preference.2012 == TRUE & affected == FALSE,], d.affected.total[voted_preference.2012 == TRUE,])
+print.percentage(d.affected.total[voted_preference.2012 == FALSE & affected == TRUE,], d.affected.total[voted_preference.2012 == FALSE,])
+print.percentage(d.affected.total[voted_preference.2012 == FALSE & affected == FALSE,], d.affected.total[voted_preference.2012 == FALSE,])
+```
