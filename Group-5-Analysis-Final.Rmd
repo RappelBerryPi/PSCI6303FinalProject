@@ -1,13 +1,13 @@
 ---
 title: 'Final Project: Group 5. Effect of Russian Trolls on the 2016 U.S. Presidential election.'
 author:
-  - Ryan Appel
-  - Angel Arribas
-  - Drew Breyer
-  - Humza Kahn
-  - Devanshi Patel
-  - Hanna Shin
-  - Poonam Siyag
+  - Appel, Ryan
+  - Arribas Lopez, Angel
+  - Breyer, Drew
+  - Kahn, Humza
+  - Patel, Devanshi
+  - Shin, Hanna
+  - Siyag, Poonam
 output:
   pdf_document: default
   html_document:
@@ -20,7 +20,7 @@ Loading packages is boring and time-consuming. First, you need to install packag
 ```{r, include=FALSE}
 if (!require("pacman")) install.packages("pacman")
 p_load(data.table, dplyr) # two modern packages to modify data objects in R
-p_load(stargazer) # a package to summaries regression results 
+p_load(stargazer) # a package to summaries regression results
 p_load(ggplot2, ggpubr) # two packages to visualize data
 `%+%` <- function(x,y){paste0(x, y)} # collapse two strings into one
 theme_set(theme_pubr(border = TRUE)) # make figures beautiful and ascetic by default
