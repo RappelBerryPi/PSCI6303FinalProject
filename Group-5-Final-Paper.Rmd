@@ -207,6 +207,10 @@ because it is political in nature which can cause a problems for data collection
 ## Existing Studies
 Describe the major results from the existing studies (academic papers or reports) regarding the mitigation of your cyber threat
 
+> The widespread transmission of digital misinformation has been seen as a major threat to representative democracy. Communication, cognitive, social, and computer scientists are researching the complex causes of disinformation spreading virally, while online platforms are starting to implement countermeasures.
+>  To guide these efforts, little systematic, data-based evidence has been released. During the ten months of 2016 and 2017, researchgate article  analyzed 14 million tweets and 400 thousand articles on Twitter. 
+>  They discovered evidence that social bots had a disproportionate role in the distribution of low-credibility content. Bots boost such material in the early stages of its distribution, before it becomes viral. They also use replies and mentions to target users with a large number of followers. 
+>  Users are vulnerable to this manipulation because they reshare bot-posted content. Social bots play an important role in the success of low-credibility sources. These findings show that limiting the use of social bots could be a useful method for combating the spread of online disinformation.
 > Partnerships with social media platforms for Curbing social bots may be an effective strategy for mitigating the spread of online misinformation.
 
 Describe the data used in these studies, Justify that the relationship between a policy and the scale of a cyber threat are causal, potential concerns with data
@@ -271,7 +275,7 @@ Skipped as per instructions
 Skipped as per instructions
 
 ## Conclusions
-+ Although this data was generated with the intension to show that this experiment would succeed, we believe the
++ Although this data was generated with the intent  to show that this experiment would succeed, we believe the
   experiment could work and a real research experiment and real data are needed in order to come up to a solid
   conclusion.
-+ The main challenge we face in collecting this data is Twitter support to allow us to run the experiment.
++ The main challenge we might face in collecting this data is Twitter support to allow us to run this experiment.
