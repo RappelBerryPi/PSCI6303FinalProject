@@ -34,36 +34,65 @@ print.percentage <- function(part, whole, rounding.digits = 3) {
 }
 ```
 
-# Scale of Problem
+# Impact of a cyberthreat on important outcomes
 ## Existing Data
 
 Describe the scale of the problem using existing data / opinions from expert reports or academic papers 
 
-> Tennessee-Knoxville study analyzed 770,005 tweets in English from known Russian troll accounts
+> This problem was extremely concerning for the United States and governments around the world, and as a result, there
+> are many academic sources and expert reports which looked into the impact that trolls had on the 2016 election. One
+> example is out of Tennessee-Knoxville which analyzed 770,005 tweets in English from known Russian troll accounts,
+> alongside data from FiveThirtyEight’s archive of multiple polling outlets.
+
+> Some of their findings were alarming, such as that for every 25,000 retweets “Russian accounts correlated to a 1%
+> increase in Trump’s poll numbers one week later” as well as seeing that “25,000 retweets would average around 10
+> retweets per tweet.” Looking at Trump’s opponent and similar social media activity, this kind of retweet volume did
+> not have an impact on her numbers.
+
+> The study additionally looked at how much of this social media activity could be attributed to bots and how much was
+> genuine/organic social media reach. The study found that “91% of first retweeters of known Russian bots were non
+> Russian bots, which suggests that propaganda spread into the networks of real U.S. citizens.”
 
 Who is the target of the cyberthreat? 
 
-> The U.S.A. Presidential election for support of Donald Trump
+> There were several “targets” of this disinformation campaign. Broadly speaking, the campaign was to sew discord and
+> uncertainty into U.S. politics and the election. More specifically, the campaign clearly targeted Donald Trump and
+> Hillary Clinton, to improve the likelihood of Donald Trump being elected as President of the United States. As we
+> now know, this was successful we can see by the results of the election.
   
 Do we know how many targets are affected in the population? What is the proportion of the target group in the overall
 population of interest? 
 
-> Many estimates based on the posts and their reach. The portion of interest is those who saw ads AND changed their vote
-> as a result.
+> This is an extremely difficult task to know how many targets were affected. This is due to how social media works,
+> as there are many links and ads and links/ads within those, which can then be shared with additional parties.
+> Speaking to tweets coming from known Russian troll accounts, which would be far less than the true targeted
+> population, one reputable study found there were 770,005 tweets from these accounts, which were then of course
+> spread throughout the social media networks.
+
+> Additionally, the more difficult task here is to know who was truly impacted by the social media campaign. That is,
+> who was exposed to Russian bot activity AND changed their vote or interest in the election as a result of this material.
 
 ## Ideal Conditions
 
 Describe the ideal data you would need to obtain a precise estimate of scale of the problem (proportion of the targeted
 units in the overall population of interest)
 
-> How many people were directly influenced by Trolls I.e. were exposed to troll material and changed their vote as a 
-> result.
+> The ideal conditions would be to know exactly who was exposed to the Russian bot activity AND changed their vote
+> because of having seen the propaganda. As a proportion of the larger population, this would be looking at everyone
+> that voted in the U.S. election vs. who was exposed to troll activity and changed their vote, or decided to vote, as
+> a result of having seen this material.
 
 What are the major obstacles for collecting these data? 
 
-> Many significant problems. What does Reach mean when there are retweets? And what about bots? Hard to tell authentic
-> reach from imitation reach. Also, how can you attribute the impact of trolls to someone's vote? Did their vote change
-> for other reasons?
+> Because this is all happening in cyberspace, there are logs and tweets that can tangibly be measured and dissected
+> by a statistical approach. That said, there are enormous obstacles as some of this information is neither public or
+> available at all. Collecting this data would mean looking into each account and associating the account with a known
+> voter identity. Then that person would need to be polled or asked about their affinity for the election i.e. who
+> they voted for and why.
+
+> Making things more difficult is that it is hard to tell authentic reach from imitation reach. There are many people
+> who have many twitter accounts, and even bots accounts are known to be bought and sold on various marketplaces.
+> Discerning what is organic vs what is machine is a burden on this area of research.
 
 Do we know how many targets are affected in the population? What is the proportion of the target group in the overall
 population of interest? 
@@ -72,7 +101,6 @@ population of interest?
 > retweets and 43 million other election related tweets sent over same timeline could be difficult to attribute to
 > Russia.
 
-# Impact of Cyber Threat
 ## Existing Studies
 
 Describe the major results from existing studies (academic papers or reports) regarding the impact of your cyber threat
@@ -227,7 +255,6 @@ Describe the data used in these studies, Justify that the relationship between a
 + These two variables would describe as to whether the voting plan was different or not.
 
 ## Research Design
-
 + We used python to randomly create the control and treatment group as well as the results of the experiment. We used
   the DiD model to show that there is a difference between those who are part of the treatment and those who are not
   part of it. 
@@ -238,15 +265,10 @@ Describe the data used in these studies, Justify that the relationship between a
 TODO: include charts
 
 ## Regression Table
-
-TODO: include charts
+Skipped as per instructions
 
 ## Credibility
-+ The data was collected as random users interacted with the fake trolls without the knowledge of the experiment proves
-  the validity of our research design. 
-+ Since these users came from the same population of affected users in the initial experiment. All we must prove here is
-  that these users were randomly sampled and evenly distributed. We employed a random selection algorithm to determine
-  whether users were part of the treatment group or not. Here are the results of the division of groups of users.
+Skipped as per instructions
 
 ## Conclusions
 + Although this data was generated with the intension to show that this experiment would succeed, we believe the
