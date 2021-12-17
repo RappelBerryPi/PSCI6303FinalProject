@@ -7,12 +7,14 @@ output:
   pdf_document: default
   html_document:
     df_print: paged
+bibliography: "E:\\\\OneDrive - The University of Texas at Dallas\\\\My Library.bib"
 ---
 ```{r, include=FALSE}
 if (!require("pacman")) install.packages("pacman")
 p_load(data.table, dplyr) # two modern packages to modify data objects in R
 p_load(stargazer) # a package to summaries regression results
 p_load(ggplot2, ggpubr) # two packages to visualize data
+p_load(pander)
 `%+%` <- function(x,y){paste0(x, y)} # collapse two strings into one
 theme_set(theme_pubr(border = TRUE)) # make figures beautiful and ascetic by default
 ```
@@ -29,9 +31,17 @@ percentage <- function(part, whole, rounding.digits = 3) {
 }
 
 print.percentage <- function(part, whole, rounding.digits = 3) {
-    p <- percentage(part, whole, rounding.digits)
-    print( p %+% "%")
+    p <- get.percentage(part, whole, rounding.digits)
+    print(p)
 }
+
+get.percentage <- function(part, whole, rounding.digits = 3) {
+    p <- percentage(part, whole, rounding.digits)
+    return (p %+% "%")
+}
+
+panderOptions('knitr.auto.asis', TRUE)
+panderOptions('table.split.table', "Inf")
 ```
 
 # Impact of a cyberthreat on important outcomes
@@ -46,8 +56,8 @@ Describe the scale of the problem using existing data / opinions from expert rep
 
 > Some of their findings were alarming, such as that for every 25,000 retweets “Russian accounts correlated to a 1%
 > increase in Trump’s poll numbers one week later” as well as seeing that “25,000 retweets would average around 10
-> retweets per tweet.” Looking at Trump’s opponent and similar social media activity, this kind of retweet volume did
-> not have an impact on her numbers.
+> retweets per tweet.” [@ruckInternetResearchAgency2019] Looking at Trump’s opponent and similar social media activity, 
+> this kind of retweet volume did not have an impact on her numbers.
 
 > The study additionally looked at how much of this social media activity could be attributed to bots and how much was
 > genuine/organic social media reach. The study found that “91% of first retweeters of known Russian bots were non
@@ -167,36 +177,81 @@ on your outcomes of interest
 | **Difference**                    | A - C               | B - D             | (B - A) - (D - C) |
 
 ## Code Analysis
-TODO: replace the below tables with the actual R code to do the analysis and printing of the tables
+```{r}
+path <- 'https://raw.githubusercontent.com/RappelBerryPi/PSCI6303FinalProject/main/0-data/data.csv'
+d <- fread(path)
+```
 
-<!-- TODO include the actual data here and stuff -->
+```{r}
+d.display <- d[,vote_changed := as.numeric(vote2012 != vote2016)]
+d.display.head <- head(d.display)
+colnames(d.display.head) <- gsub("_", " ", colnames(d.display.head))
+colnames(d.display.head) <- gsub("troll tweets", "", colnames(d.display.head))
+colnames(d.display.head)[6] = "vote 2012"
+colnames(d.display.head)[7] = "vote 2016"
+pander(d.display.head, style = "rmarkdown")
+```
 
-| Voting preference | pro democratic | anti democratic | pro republican | anti republican | troll tweets | vote 2012 | vote 2016 | vote changed | main information source |
-|:-----------------:|:--------------:|:---------------:|:--------------:|:---------------:|:------------:|:---------:|:---------:|:------------:|:-----------------------:|
-| R                 | 14             | 64              | 85             | 18              | 181          | R         | O         | 1            | Online                  |
-| R                 | 21             | 72              | 90             | 23              | 206          | R         | R         | 0            | Online                  |
-| R                 | 25             | 62              | 89             | 22              | 198          | R         | R         | 0            | Social Media            |
-| R                 | 8              | 73              | 96             | 29              | 206          | R         | R         | 0            | Television              |
-| R                 | 22             | 74              | 82             | 28              | 206          | R         | D         | 1            | Online                  |
-| R                 | 23             | 60              | 85             | 18              | 186          | R         | R         | 0            | Social Media            |
-| R                 | 17             | 75              | 81             | 14              | 187          | R         | R         | 0            | Social Media            |
-
-
-| Total Tweets  | vote 2012 | vote 2016 | vote change | exposure to troll tweets |
-|:-------------:|:---------:|:---------:|:-----------:|:------------------------:|
-| 181           | R         | O         | 1           | 0                        |
-| 206           | R         | R         | 0           | 1                        |
-| 198           | R         | R         | 0           | 1                        |
-| 206           | R         | R         | 0           | 1                        |
-| 206           | R         | D         | 1           | 1                        |
-| 186           | R         | R         | 0           | 0                        |
-
+```{r}
+d.display[, Total_Tweets := troll_tweets_pro_democratic + troll_tweets_anti_democratic + 
+            troll_tweets_pro_democratic + troll_tweets_anti_republican]
+mean.total.tweets <- mean(d$Total_Tweets)
+d.display[, exposure_to_troll_tweets := Total_Tweets >= mean.total.tweets]
+names <- c("Total_Tweets", "vote2012", "vote2016", "vote_changed", "exposure_to_troll_tweets")
+d.condensed <- d.display[, ..names]
+colnames(d.condensed) <- gsub("_", " ", colnames(d.condensed))
+colnames(d.condensed)[2] = "vote 2012"
+colnames(d.condensed)[3] = "vote 2016"
+pander(head(d.condensed), style = "rmarkdown")
+```
 
 ## Regression Table Analysis
-TODO: add the code to do the analysis as well as the above pictures missed in the previous section
+
+```{r}
+d.aggregate <- d
+d.aggregate <- d.aggregate[,troll_tweets_for_republican := troll_tweets_pro_republican + 
+                             troll_tweets_anti_democratic]
+d.aggregate <- d.aggregate[,troll_tweets_for_democratic := troll_tweets_pro_democratic +
+                             troll_tweets_anti_republican]
+d.aggregate <- d.aggregate[,troll_tweets_total := troll_tweets_pro_democratic + 
+                            troll_tweets_anti_republican + troll_tweets_pro_republican + 
+                             troll_tweets_anti_democratic]
+d.aggregate <- d.aggregate[, voted_same := vote2012 == vote2016]
+mean.total.troll.tweets <- mean(d.aggregate$troll_tweets_total)
+mean.for_republican.troll.tweets <- mean(d.aggregate$troll_tweets_for_republican)
+mean.for_democratic.troll.tweets <- mean(d.aggregate$troll_tweets_for_democratic)
+d.affected.total <- d.aggregate[, affected := troll_tweets_total >= 
+                                  mean.total.troll.tweets]
+d.affected.republican <- d.aggregate[, affected := troll_tweets_pro_democratic >= 
+                                       mean.for_republican.troll.tweets]
+d.affected.democratic <- d.aggregate[, affected := troll_tweets_pro_democratic >= 
+                                       mean.for_democratic.troll.tweets]
+d.affected.republican[, change_to_republican := vote2016 == "R" & voted_same == FALSE]
+d.affected.democratic[, change_to_democratic := vote2016 == "D" & voted_same == FALSE]
+d.affected.total[, news_source_is_twitter := main_information_sorce == "Social Media"]
+d.affected.total[, voted_preference.2012 := vote2012 == voting_preference ]
+d.affected.total[, voted_preference.2016 := vote2016 == voting_preference ]
+model.did <- lm(data = d.affected.total, voted_preference.2016 ~ affected + 
+                  voted_preference.2012 + voted_preference.2012:affected)
+stargazer(model.did, type="text")
+```
 
 ## Credibility
-TODO: establish Credibility.
+```{r}
+p.1 <- get.percentage(d.affected.total[voted_preference.2012 == TRUE & affected == TRUE,], 
+                      d.affected.total[voted_preference.2012 == TRUE,])
+p.2 <- get.percentage(d.affected.total[voted_preference.2012 == TRUE & affected == FALSE,], 
+                      d.affected.total[voted_preference.2012 == TRUE,])
+p.3 <- get.percentage(d.affected.total[voted_preference.2012 == FALSE & affected == TRUE,], 
+                      d.affected.total[voted_preference.2012 == FALSE,])
+p.4 <- get.percentage(d.affected.total[voted_preference.2012 == FALSE & affected == FALSE,], 
+                      d.affected.total[voted_preference.2012 == FALSE,])
+cat(paste(p.1,p.2,p.3,p.4, sep = "\n"))
+```
+
+> As we can see, both relative populations between those who were affected and those who weren't affected for both our 
+> control and treatment populations are nearly identical with both affected participants having nearly identical percentages 
+> at ``r p.1`` and ``r p.3``. Similarly both groups of non-affected participants have percentages at ``r p.2`` and ``r p.4``.
 
 ## Conclusions
 The size of the effect between voting behavior and those affected by troll tweet exposure is significant and shows
@@ -262,8 +317,6 @@ Describe the data used in these studies, Justify that the relationship between a
   The control group was always given the same chance to interact with them without any knowledge of the tweets being
   fake or real. 
 
-TODO: include charts
-
 ## Regression Table
 Skipped as per instructions
 
@@ -275,3 +328,6 @@ Skipped as per instructions
   experiment could work and a real research experiment and real data are needed in order to come up to a solid
   conclusion.
 + The main challenge we face in collecting this data is Twitter support to allow us to run the experiment.
+
+\newpage
+# Bibliography
