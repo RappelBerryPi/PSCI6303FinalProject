@@ -182,17 +182,21 @@ path <- 'https://raw.githubusercontent.com/RappelBerryPi/PSCI6303FinalProject/ma
 d <- fread(path)
 ```
 
-```{r}
+```{r, include=FALSE}
 d.display <- d[,vote_changed := as.numeric(vote2012 != vote2016)]
 d.display.head <- head(d.display)
 colnames(d.display.head) <- gsub("_", " ", colnames(d.display.head))
 colnames(d.display.head) <- gsub("troll tweets", "", colnames(d.display.head))
 colnames(d.display.head)[6] = "vote 2012"
 colnames(d.display.head)[7] = "vote 2016"
-pander(d.display.head, style = "rmarkdown")
 ```
 
 ```{r}
+# Code Omitted for brevity
+pander(d.display.head, style = "rmarkdown")
+```
+
+```{r, include=FALSE}
 d.display[, Total_Tweets := troll_tweets_pro_democratic + troll_tweets_anti_democratic + 
             troll_tweets_pro_democratic + troll_tweets_anti_republican]
 mean.total.tweets <- mean(d$Total_Tweets)
@@ -202,12 +206,15 @@ d.condensed <- d.display[, ..names]
 colnames(d.condensed) <- gsub("_", " ", colnames(d.condensed))
 colnames(d.condensed)[2] = "vote 2012"
 colnames(d.condensed)[3] = "vote 2016"
+```
+```{r}
+# Code Omitted for brevity
 pander(head(d.condensed), style = "rmarkdown")
 ```
 
 ## Regression Table Analysis
 
-```{r}
+```{r, include=FALSE}
 d.aggregate <- d
 d.aggregate <- d.aggregate[,troll_tweets_for_republican := troll_tweets_pro_republican + 
                              troll_tweets_anti_democratic]
@@ -231,6 +238,10 @@ d.affected.democratic[, change_to_democratic := vote2016 == "D" & voted_same == 
 d.affected.total[, news_source_is_twitter := main_information_sorce == "Social Media"]
 d.affected.total[, voted_preference.2012 := vote2012 == voting_preference ]
 d.affected.total[, voted_preference.2016 := vote2016 == voting_preference ]
+```
+
+```{r}
+# Code Omitted for brevity
 model.did <- lm(data = d.affected.total, voted_preference.2016 ~ affected + 
                   voted_preference.2012 + voted_preference.2012:affected)
 stargazer(model.did, type="text")
@@ -262,11 +273,19 @@ because it is political in nature which can cause a problems for data collection
 ## Existing Studies
 Describe the major results from the existing studies (academic papers or reports) regarding the mitigation of your cyber threat
 
-> The widespread transmission of digital misinformation has been seen as a major threat to representative democracy. Communication, cognitive, social, and computer scientists are researching the complex causes of disinformation spreading virally, while online platforms are starting to implement countermeasures. 
-> To guide these efforts, little systematic, data-based evidence has been released. During the ten months of 2016 and 2017, researchgate article  analyzed 14 million tweets and 400 thousand articles on Twitter. They discovered evidence that social bots had a disproportionate role in the distribution of low-credibility content. Bots boost such material in the early stages of its distribution, before it becomes viral. 
+> The widespread transmission of digital misinformation has been seen as a major threat to representative democracy. 
+> Communication, cognitive, social, and computer scientists are researching the complex causes of disinformation 
+> spreading virally, while online platforms are starting to implement countermeasures. 
+> To guide these efforts, little systematic, data-based evidence has been released. During the ten months of 2016 and 
+> 2017, researchgate article analyzed 14 million tweets and 400 thousand articles on Twitter. They discovered 
+> evidence that social bots had a disproportionate role in the distribution of low-credibility content. Bots boost 
+> such material in the early stages of its distribution, before it becomes viral. 
 > They also use replies and mentions to target users with a large number of followers. 
-> Users are vulnerable to this manipulation because they reshare bot-posted content. Social bots play an important role in the success of low-credibility sources. These findings show that limiting the use of social bots could be a useful method for combating the spread of online disinformation.
-> Partnerships with social media platforms for Curbing social bots may be an effective strategy for mitigating the spread of online misinformation.
+> Users are vulnerable to this manipulation because they reshare bot-posted content. Social bots play an important 
+> role in the success of low-credibility sources. These findings show that limiting the use of social bots could be a 
+> useful method for combating the spread of online disinformation.
+> Partnerships with social media platforms for Curbing social bots may be an effective strategy for mitigating the 
+> spread of online misinformation.
 
 Describe the data used in these studies, Justify that the relationship between a policy and the scale of a cyber threat are causal, potential concerns with data
 
@@ -275,23 +294,30 @@ Describe the data used in these studies, Justify that the relationship between a
 
 ## Ideal Experiment
 
-+ We would partner with twitter to run an experiment on a subset of our current population. In this experiment, people
-  would be exposed to fake tweets and legit tweets (all of them generated by us), and we would collect the following
-  columns:
-  + Number of fake troll tweets seen
-  + Number of fake troll tweets reported
-  + Number of fake troll tweets interacted with
-  + Plan to vote for in 2024 (after the experiment period ends)
-+ The control group would be those people that see fake troll tweets but do not know whether they are troll tweets or
-  not. They can interact with them but have no reporting capabilities nor learning material about the troll tweets.
-+ The treatment group would be those people that see fake troll tweets but can check whether they are legit tweets or
-  troll tweet. They can learn overtime from experience as well as from resources provided from within twitter’s platform
-  such as information campaigns.
-+ We would use a difference in differences approach - how many people changed their voting preference in the control
-  group vs. how many people changed their preference in the treatment group.
-+ The biggest concern is getting Twitter support for this. Everyone that is enrolled knows that they are part of an
-  experiment. We would need to employ people to somehow generate the fake tweets or create a program that does it for
-  us. It is probably unfeasible for Twitter to allow a 3rd party to conduct research about how their platform operates.
+> We would partner with twitter to run an experiment on a subset of our current population divided into two groups. In 
+> this experiment, one group of people would be exposed to all the tweets which include both troll and legitimate 
+> tweets while other group will not be exposed to any troll tweets.  
+
+And we would collect the following columns:
++ Number of fake troll tweets seen
++ Number of fake troll tweets reported
++ Number of fake troll tweets interacted with
++ Plan to vote for in 2024 (after the experiment period ends)
+
+> In this experiment, our control group will be the group of people who would we able to see both, the troll tweets and 
+> the legitimate tweets. 
+> And our treatment group will be the group of people who do not see any troll tweets but they are exposed to regular 
+> tweets. 
+
+> We are using an instrumental variable approach on, How the seeing and interacting with troll tweets affects people’s 
+> patterns/preferences. For instance, whether they changed their vote or not. Finally, we should be able to tell 
+> whether the people who saw troll tweets (Control Group) are more likely to change their voting preferences than 
+> those who are not exposed to troll tweets at all (Treatment Group). 
+
+> In order to be able to successfully conduct this experiment, we will need support from Twitter and our biggest 
+> concern would be Twitter’s agreement. Everyone that is enrolled knows that they are part of an experiment. We would 
+> need to employ people to somehow generate the troll tweets or create a program that does it for us. It is probably 
+> unfeasible for Twitter to allow a 3rd party to conduct research about how their platform operates.
 
 ## Existing Data Sources
 + There are no existing sources to collect a dataset that could help us establish the impact of our policy since it is a
